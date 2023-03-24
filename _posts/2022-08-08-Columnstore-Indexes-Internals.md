@@ -5,10 +5,10 @@ layout: post
 categories: [SQL, SQLIndexing]
 ---
 
-# Introduction
+## Introduction
 If a DBA knows one thing about Columnstore Indexes is that it is stored in columns rather than rows and that is where the performance benefit comes from when we are talking about aggregations, however much further than that they can be a bit of a mystery. When to use them and how to use them isnt second nature to the average OLTP production DBA. However they can be very useful to all types of envrionments if used correctly. This article will go through the relevant internals of the column based storage of a Columnstore index.
 
-# Storage internals
+## Storage internals
 When talking about Column Based storage
 
 - Each column is stored in a structure called a Row Group 
@@ -20,7 +20,7 @@ When talking about Column Based storage
 
 After row groups are built SQL Server then will combine all its column data on a per row group basis and compresses these groups. The rows within a Row Group can be re-arranged if this helps to get a better compression. Column data within a row group is called a Segment. SQL will load an entire segment into memory when that data is needed, SQL also stores segment metadata with minimum and maximum values etc.
 
-## Quick Recap
+### Quick Recap
 
 - Columns are stored in Row Groups
 - Each row group stores roughly 1 million rows
@@ -33,15 +33,15 @@ After row groups are built SQL Server then will combine all its column data on a
 
 ![ColumnStore Internals](/assets/images/ColumnStore.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
 
-# Compression
+## Compression
 
 During compression SQL Server replaces all values with 64 bit integers using 2 possible algorithms:
 
-## Dictionary Encoding
+### Dictionary Encoding
 
 This encoding stores distinct values from the data in a separate structure called a dictionary. Every value has unique id assigned. SQL Server replaces the actual data with a unique id from the dictionary, SQL then holds a global dictionary which is shared across all segments that belong to the same index partition to be able to keep track of all IDs. A crude example can be seen below:
 
-## Value Based Encoding
+### Value Based Encoding
 
 This is mainly used for numeric and integer datatypes that do not have duplicated values. In this scenario dictionary compression is in-efficient. This type of encoding aims to compress these values to a smaller range of 64 bit integers. To learn more about encoding and compression in ColumnStore indexes this  is a great article
 
