@@ -1,7 +1,6 @@
-
 ---
-title: Columnstore Indexes Internals
-date: 2022-08-08 11:33:00 +0800
+title: Isolation Levels
+date: 2020-01-21 07:33:00 +0000
 layout: post
 categories: [SQL, SQLIndexing]
 ---
