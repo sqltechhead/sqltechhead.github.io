@@ -74,7 +74,7 @@ COMMIT TRANSACTION
 ```
 Here Session 1 will run. It will begin a transaction and select from dbo.PhantomReads, it will then wait for 10 seconds. During that 10 seconds session 2 will run and insert an extra row into the table. When session 1 carries out the second select it will have an extra record, which is the “phantom read”.
 
-![Phantom Reads](/assets/images/IsolationLevels1.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
+![Phantom Reads](/assets/images/IsolationLevels1.png){: .dark .w-75 .rounded-10 .normal }
 
 ## Non-Repeatable Read
 You will notice a non-repeatable read is similar to a phantom read, the only difference is that it is an update rather than an insert.
@@ -111,7 +111,7 @@ COMMIT TRANSACTION
 
 Session 1 will start and select from NonRepeatable read table. It will then wait for 10 seconds. During that 10 seconds session 2 will update id 1 to = 4. Session 1 will then query the table again and have a different value for id 1. You will now have 2 ids of 4. Hence a non-repeatable read.
 
-![Non Repetable Reads](/assets/images/IsolationLevels2.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
+![Non Repetable Reads](/assets/images/IsolationLevels2.png){: .dark .w-75 .normal }
 
 ## Concurrent Update Errors
 Concurrent update errors can occur in the snapshot isolation level. The jist of it is that 2 transactions can come along and update data based on a point in time snapshot of the data, so when they come to commit their transaction they have 2 different versions of the story. 1 transaction cannot complete, because the data is inconsistent. 1 Transaction will then error.
