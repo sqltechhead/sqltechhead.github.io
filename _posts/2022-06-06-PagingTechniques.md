@@ -98,6 +98,7 @@ This script will iterate through your entire dataset bringing back 1000 rows in 
 1000 rows, performant query only read the rows it needed. Now go and check the 5th iteration
 
 ![Query Plan Properties](/assets/images/Paging2.png){: .dark .w-75 .normal }
+
 It has looked through 5000 rows, so it has looked through the first 5000 rows in the index and only brought back 1000 it needed. Not great but still performant. Now go look at the last iteration (or most likely the last iteration before you stopped the query)
 
 ![Query Plan Properties](/assets/images/Paging3.png){: .dark .w-75 .normal }
@@ -139,11 +140,13 @@ In This technique, we create our backup table then on each iteration we output t
 Now looking at the execution plan again on the first iteration we will see the below:
 
 ![Query Plan Properties](/assets/images/Paging4.png){: .dark .w-75 .normal }
-SQL is searching in the PagingTable then performing a nested loop join to the backup table. It picks up: 1001 rows from PagingTechniques 0 From [PagingTechniquesTable_Backup]
+
+SQL is searching in the PagingTable then performing a nested loop join to the backup table. It picks up: 1001 rows from PagingTechniques 0 From PagingTechniquesTable_Backup
 
 All good. Next look at the next iteration. We now get the below:
 
 ![Query Plan Properties](/assets/images/Paging5.png){: .dark .w-75 .normal }
+
 We are now pulling rows from PagingTechniquesTable_Backup then hash matching to paging techniques. It picks up: 1000 From PagingTechniquesTable_Backup 1000 rows from PagingTechniques
 
 It is now reading 2000 rows because it needs to join the entire dataset from your backup table.
@@ -151,6 +154,7 @@ It is now reading 2000 rows because it needs to join the entire dataset from you
 Now if you look at the last execution i stopped my script after 33 executions. We have the same join as before
 
 ![Query Plan Properties](/assets/images/Paging6.png){: .dark .w-75 .normal }
+
 Its reading 33000 rows from PagingTechniquesTable_Backup 1000 Rows from PagingTechniques
 
 Takeaway is the more rows you need to delete the more rows you are going to have to read. Again similar to the offset/fetch technique with larger datasets this will not be a great idea.
@@ -221,6 +225,7 @@ END
 Digging into the execution plan we can see the performance. Look at the first iteration
 
 ![Query Plan Properties](/assets/images/Paging7.png){: .dark .w-75 .normal }
+
 We have a clustered Index Seek on both the temp table and paging table. When we look at the number of rows read we see 1000 for both.
 
 Now look at the last iteration 
