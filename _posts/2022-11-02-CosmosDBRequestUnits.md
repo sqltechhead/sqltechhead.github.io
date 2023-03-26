@@ -2,6 +2,7 @@
 title: CosmosDB Request Units
 date: 2022-11-02 18:00:00 +0000
 layout: post
+math: true
 categories: [NoSQL, CosmosDB]
 ---
 ## Introduction
@@ -66,7 +67,7 @@ This model is really useful for production workloads as it allows for the highes
 #### How does it work
 With autoscale you still have to set a hard limit for RUs, but this can be a lot higher than if you were just using provisioned throughput. The equation for how autoscale is decided is below
 
-> 0.1*Tmax <= T <= Tmax 
+$$ 0.1*Tmax <= T <= Tmax  $$
 
 > T=Throughput
 
