@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Python
+title: Python Getting Started
 date: 2022-10-22 19:00:00 +0000
 layout: post
 math: true
