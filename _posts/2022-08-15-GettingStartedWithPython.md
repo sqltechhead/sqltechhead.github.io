@@ -1,6 +1,6 @@
 ---
 title: Python Getting Started
-date: 2022-10-22 19:00:00 +0000
+date: 2022-08-15 19:00:00 +0000
 layout: post
 math: true
 categories: [Python]
@@ -50,4 +50,4 @@ Python will come already installed on linux, however we want to check what versi
 python3 --version
 ```
 
-![PythonInstall](/assets/images/PythonGettingStarted.6){: .dark .w-75 .normal }
+![PythonInstall](/assets/images/PythonGettingStarted6.png){: .dark .w-75 .normal }
