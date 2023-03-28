@@ -20,6 +20,7 @@ For a quick bit of context before moving on, to brew beer you need 4 main ingred
 
 ![BrewingTkinter](/assets/images/BrewingTkinter.png){: .dark .w-75 .normal }
 
+## Getting Started
 Now lets get into tkinter, first thing we want to test is can we create a really bob basic GUI that can handle a recipe list of sorts for our main ingredients we need.
 To start with lets import tkinter into our window and just create our window. Copy the below into you python ide of choice. I recommend pyCharm.
 
