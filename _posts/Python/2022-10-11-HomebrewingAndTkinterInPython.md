@@ -61,7 +61,7 @@ Label(root, text="sqlTechHead Brewery", font=("arial italic", 18)).place(x=20, y
 
 We use the title property to set the title of the window. Then we use the Label function to show text. For any GUI function we will have to place it on the screen, .place allows us to place it in a specific by using an x and y axis.
 
-![BrewingTkinter](/assets/images/BrewingTkinter2.png){: .dark .w-75 .normal }
+![BrewingTkinter](/assets/images/BrewingTkinter3.png){: .dark .w-75 .normal }
 
 Next we want to have some entry boxes where we can enter the specific malts we will be including in our recipe. Copy the below, again ensuring the main loop is right at the bottom.
 
@@ -90,7 +90,7 @@ Alot is going on on this bit of code, we create another label to work as a subti
 
 We then add 4 different sections and create an Entry box, now we have to assign the entry box to a variable, as at some point when we come to enter this data somewhere we will need to decipher the data from the entry box
 
-![BrewingTkinter](/assets/images/BrewingTkinter3.png){: .dark .w-75 .normal }
+![BrewingTkinter](/assets/images/BrewingTkinter4.png){: .dark .w-75 .normal }
 
 Next we want to add the remainder entry boxes for our other ingredients. Enter the below block below the last section. This will create 3 new columns of entry boxes exactly as we did in the step before.
 
@@ -141,7 +141,7 @@ yeast1 = Entry(root, width=30)
 yeast1.place(x=820, y=90)
 ```
 
-![BrewingTkinter](/assets/images/BrewingTkinter4.png){: .dark .w-75 .normal }
+![BrewingTkinter](/assets/images/BrewingTkinter5.png){: .dark .w-75 .normal }
 
 Last step is to create a button which eventually can be used to enter this data somewhere. Enter the below after the last section.
 
@@ -153,7 +153,7 @@ Now we have the button, we assign a variable to this as well, as at some point w
 
 Our final GUI will look like the below. Super basic, but really shows the use of some of the functions and shows you how you might start to create more complicated GUIs
 
-![BrewingTkinter](/assets/images/BrewingTkinter5.png){: .dark .w-75 .normal }
+![BrewingTkinter](/assets/images/BrewingTkinter6.png){: .dark .w-75 .normal }
 
 Full code can also be found below
 
