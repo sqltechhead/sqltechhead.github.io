@@ -1,5 +1,5 @@
 ---
-title: Homebrewing and Tkinter in Pythong
+title: Homebrewing and Tkinter in Python
 date: 2022-10-11 19:00:00 +0000
 categories: [Python]
 ---
