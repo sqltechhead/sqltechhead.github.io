@@ -1,6 +1,7 @@
 ---
 layout: page
 title: sqlTechHead
+toc: true
 ---
 
 ![Desk](/assets/images/Desk.jpeg){: .dark .w-75 .normal }
@@ -18,5 +19,9 @@ SQL Server is a hugely powerful Relational Database System, it enables speedy qu
 ### Google Big Query
 Google BigQuery is a new technology to myself that i am attempting to learn. It is googles Serverless data warehouse offering. It enables aggregating and querying vast amounts of data at once while still returning data back in a timely manner. Coming under the Big Data category it is aone to definitely invest in as is very sought after.
 
+![BigQuery](/assets/images/GoogleBigQuery.png){: .dark .w-75 .normal }
+
 ### Python
 Now python is a really cool language, being cross platform it already has the edge on a lot of other languages. Being universally available on linux and super easy to install on windows it allows familiar coding styles and syntax as well as powerful analytics. A very cool language for a data professional to learn.
+
+![Python](/assets/images/Python.png){: .dark .w-75 .normal }
