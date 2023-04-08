@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![Dan](/assets/images/Dan.jpeg){: .dark .w-75 .normal }
+![Dan](/assets/images/Dan.jpeg){: width="250" height="500" .dark .normal }
 
 I have more than 7 years experience working as a DBA, my main skills revolve around SQL and SQL Automation with powershell. Recently i have been trying to increase my skillset by learning python in my own time as well as Databricks in work time. With the continual improvements with Cloud SAAS products such as Azure SQL Database it is likely that the DBA role as we know it will slowly move to different products while always having SQL as a base. Its an exciting time, and learning new products will help with transitions into these areas.
 
