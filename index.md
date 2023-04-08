@@ -4,7 +4,7 @@ title: sqlTechHead
 toc: true
 ---
 
-![Desk](/assets/images/Desk.jpg){: .dark .w-75 .normal }
+![Desk](assets/images/Desk.JPG){: .dark .w-75 .normal }
 
 ## sqlTechhead Goal
 This site will hold information on a range of coding technologies. I work as a SQL DBA so my core skills are Microsoft SQL Server and Powershell. However i have built this site to enable me to learn other languages and share my journey and findings with the coding community.
