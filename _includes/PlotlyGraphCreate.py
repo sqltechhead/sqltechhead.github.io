@@ -1,12 +1,15 @@
 import plotly.express as px
 import plotly.io as pio
+import pandas as pd
 
-df = px.data.gapminder()
-df_2007 = df.query("year==2007")
+df = pd.read_csv('Skills.csv')
+df.head()
 
-fig = px.scatter(df_2007,
-                 x="gdpPercap", y="lifeExp", size="pop", color="continent",
-                 log_x=True, size_max=60,
-                 template="plotly_dark", title="Gapminder 2007: '%s' theme" % "plotly_dark")
 
-pio.write_html(fig, file='figure.html', auto_open=False)
+
+fig = px.line(df,
+                 x="Year", y="Level",color="Skill", 
+                 log_x=True,
+                 template="plotly_dark", title="Skills Over Time (1-10)")
+
+pio.write_html(fig, file='SkillsGraph.html', auto_open=True)
