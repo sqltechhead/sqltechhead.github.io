@@ -23,6 +23,10 @@ I have more than 7 years experience working as a DBA, my main skills revolve aro
 | C#                           | x                |          |            |
 | Javascript                   | x                |          |            |
 
+### Skills Graph
+Using Python and Plotly i put together a graph to outline all my key skills and improvements over the years. 
+
+{% include SkillsGraph.html %}
 
 ## Job Experience
 **Senior SQL Database Administrator@dotdigital**
