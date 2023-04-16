@@ -2,7 +2,7 @@ import plotly.express as px
 import plotly.io as pio
 import pandas as pd
 
-df = pd.read_csv('Skills.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/sqltechhead/sqltechhead.github.io/master/_includes/Skills.csv')
 df.head()
 
 
