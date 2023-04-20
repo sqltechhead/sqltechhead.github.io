@@ -66,7 +66,8 @@ ON					a.addresstypeid = b.addresstypeid
 
 On the surface it looks fairly similar to the indexed nested loop other than an Index Scan rather than an Index Seek. This difference makes all the difference when it comes to performance. To see this lets look at the properties. Its read 41,068 rows to bring back 1000 thats 40,068 rows it didnt need to read to get to its needed rows. This will result in really bad performance on large tables. 
 
-![UnindexedLoopJoinInner](/assets/images/UnindexedLoopJoinInner.png){: .dark .w-75 .normal }
+![UnindexedLoopJoinInner](/assets/images/UnindexedNestedLoopInner.png){: .dark .w-75 .normal }
 
 Again Bert Wagner created a great visual which really shows how it works. Showing the unordered state and the extra work it needs to do. 
+
 ![UnindexedNestedLoop](/assets/images/UnindexedNestedLoop.gif){: .dark .w-75 .normal }
