@@ -5,7 +5,7 @@ layout: post
 categories: [Azure, YamlPipelines]
 ---
 ## Introduction
-Using a job matrix in YAML pipelines is a really powerful tool to enable you to run parralel deploys with different variable values. Use cases include:
+Using a job matrix in YAML pipelines is a really powerful tool to enable you to run parallel deploys with different variable values. Use cases include:
 - Running MSBuild in parralel against multiple configurations with no extra code
 - Running Deploys against multiple different environments 
 - Running Deploys against different regions in Azure
@@ -14,7 +14,7 @@ Using a job matrix in YAML pipelines is a really powerful tool to enable you to 
 ## Matrix Basics
 MSDN has a good starter document to go through the basic syntax and how to use a matrix
 
-https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-job-strategy?view=azure-pipelines
+<https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-job-strategy?view=azure-pipelines>
 
 The basic and most common declaration is within a job and can be done as below. 
 ```yaml
