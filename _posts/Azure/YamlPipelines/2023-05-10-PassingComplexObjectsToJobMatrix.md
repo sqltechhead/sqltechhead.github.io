@@ -1,5 +1,5 @@
 ---
-title: Passing Complex Objects To Job Matrix'
+title: Passing Complex Objects To Job Matrix
 date: 2023-05-10 18:00:00 +0000
 layout: post
 categories: [Azure, YamlPipelines]
