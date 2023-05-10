@@ -24,7 +24,7 @@ jobs:
     matrix:
 ```
 
-A matrix can be defined in a very similar way to a complex object. So lets use MSBuild as an example with MSBuild usually you will have a debug and a release configuration. Debug for testing and release for production. You could set you matrix as below
+A matrix can be defined in a very similar way to a complex object. So lets use MSBuild as an example, with MSBuild usually you will have a debug and a release configuration. Debug for testing and release for production. You could set you matrix as below
 
 ```yaml
 jobs:
@@ -37,7 +37,7 @@ jobs:
         Configuration: Release
 ```
 
-You set the matrix with 2 properties debug and release. Within those properties you can set variables to be used. We set configuration to be debug and release in each.So lets try and visualise it now within the pipeline. The below pipeline code will show a basic matrix in action
+You set the matrix with 2 properties debug and release. Within those properties you can set variables to be used. We set configuration to be debug and release in each. So lets try and visualise it now within the pipeline. The below pipeline code will show a basic matrix in action.
 
 ```yaml
 trigger: none
