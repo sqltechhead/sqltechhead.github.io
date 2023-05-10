@@ -58,6 +58,7 @@ jobs:
       displayName: Building $(Configuration) Configuration
 ```
 As you can see in the below screenshot with this simple yaml code we have now been able to create 2 parralel jobs to run.
+
 ![MatrixExample](/assets/images/MatrixExample.png){: .dark .w-75 .normal }
 
 ## Passing Complex Objects to matrix
