@@ -82,7 +82,7 @@ parameters:
 jobs:
   - job: Build 
     strategy:
-     matrix: ${{ parameters.matrix }}
+     matrix: ${{{{ parameters.matrix }}}}
     steps:
     - script: echo 'Building $(Configuration) Configuration.'
       displayName: Building $(Configuration) Configuration
