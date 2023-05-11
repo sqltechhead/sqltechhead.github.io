@@ -82,7 +82,7 @@ parameters:
 jobs:
   - job: Build 
     strategy:
-     matrix: ${{{{ parameters.matrix }}}}
+     matrix: {% raw %}${{ parameters.matrix }}{% endraw %}
     steps:
     - script: echo 'Building $(Configuration) Configuration.'
       displayName: Building $(Configuration) Configuration
