@@ -113,7 +113,7 @@ parameters:
 jobs:
   - job: RestartServer 
     strategy:
-     matrix: ${{ parameters.matrix }}
+     matrix: {% raw %}${{ parameters.matrix }}{% endraw %}
      maxParallel: 1
     steps:
     - script: echo 'Restarting $(servername).'
