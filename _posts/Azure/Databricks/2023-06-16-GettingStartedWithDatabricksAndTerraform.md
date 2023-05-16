@@ -5,7 +5,9 @@ layout: post
 categories: [Azure, Databricks]
 ---
 ## Introduction
-Databricks provides a really rich and functional API to be able to automate 99% of tasks with, coined with being available on all major cloud platforms it really puts itself on the map for easy integration. That API has been extended by many third party technologies to provide the experience people are used to. One example of this is Terraform. A leader in its field at IAC or Infrastructure As Code. They provide a databricks Provider to enable admins to deploy their Databricks instance via Terraform code. In this Blog post we will go through getting Databricks setup on Azure and the workspace managed by Terraform
+Databricks provides a really rich and functional API to be able to automate 99% of tasks with, coined with being available on all major cloud platforms it really puts itself on the map for easy integration. That API has been extended by many third party technologies to provide the experience people are used to. One example of this is Terraform. A leader in its field at IAC or Infrastructure As Code. They provide a databricks Provider to enable admins to deploy their Databricks instance via Terraform code. 
+
+Terraform also provides a provider for AzureRM, so it is possible to automate your Azure objects to be created by Terraform too, however sometimes you will use another technology such as ARM or Bicep for your Azure and then Terraform for your Databricks. This is the design we will be demoing in this blog post.
 
 ## Setting up your local machine
 - Navigate to the below link and download Terraform for windows
@@ -29,7 +31,7 @@ Databricks provides a really rich and functional API to be able to automate 99% 
 
 ### Storage Account
 - To store our terraform state file we need a Storage Account. Search Storage Accounts in your Azure Portal and select create
-- Select our databricksterraform resource group and called the storage account the same again. 
+- Select our databricksterraform resource group and call the storage account the same again. 
 - We can just use a standard one here so as to not incur too much cost
 
 ![DatabricksTerraform2](/assets/images/DatabricksTerraform2.png){: .dark .w-75 .normal }
