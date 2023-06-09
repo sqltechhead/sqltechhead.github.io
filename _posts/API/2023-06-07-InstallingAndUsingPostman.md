@@ -9,8 +9,10 @@ categories: [API]
 Postman is an application that makes communicating with APIs so easy. It makes APIs accessible to anybody without any coding knowledge. While giving that accessibility it also provides easy ways to convert into things such as a curl command if you want to work with APIs by code. It really is the best starter tool in my opinion to getting into using APIs.
 
 ## Install Postman
-* Navigate to the below link and click on your operating system image to download
-<https://www.postman.com/>
+* Navigate to the below link and click on the download link
+
+<https://www.postman.com/downloads/>
+
 * Double click on downloaded file and follow prompts to install
 
 The most basic application will look like below, there are plenty of expert features that postman provides but we will just stick with the basics for now.
