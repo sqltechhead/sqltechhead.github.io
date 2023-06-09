@@ -28,10 +28,12 @@ The most basic application will look like below, there are plenty of expert feat
 ![Postman](/assets/images/Postman3.png){: .dark .w-75 .normal }
 
 You get the option to do many things with APIs such as:
+
 * GET - Read data
 * PUT - Set data
 * POST - Set Data
 * DELETE - Delete data
+
 You then have sections such as Authorization which allows you to pass credentials to APIs that require it. Then sections such as Header sna Body usually pertain to API Endpoints where you need to set data, these sections allow you to set the data to be pushed and the type of data it is.
 
 For the most basic example we are going to use an API endpoint. We will stick with GET for now. The below link is a fun free api that requires no authentication so is a great starter API. 
