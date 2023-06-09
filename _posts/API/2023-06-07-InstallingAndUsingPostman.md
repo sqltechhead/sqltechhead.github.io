@@ -54,7 +54,7 @@ For the most basic example we are going to use an API endpoint. We will stick wi
 
 * Then press send.
 
-![Postman](/assets/images/Postman3.png){: .dark .w-75 .normal }
+![Postman](/assets/images/Postman4.png){: .dark .w-75 .normal }
 
 You now have your very own pokedex! Test out some other pokemon to get more acquainted
 
@@ -77,6 +77,8 @@ Using this API we will get into how to use parameters.
 Having every single recipe is great but as well as a beer enthusiast i am a STRONG beer enthusiast. I want to be looking at any beer that is over 7% how do i do that?
 
 * Scroll down to the Get Beers section in the documentation
+
+![Postman](/assets/images/Postman5.png){: .dark .w-75 .normal }
 
 > In majority of good API documentation they will provide easy ways to access different endpoints/params.
 {: .prompt-tip }
