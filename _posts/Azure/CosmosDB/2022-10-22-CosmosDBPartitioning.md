@@ -2,7 +2,7 @@
 title: CosmosDB Partitioning
 date: 2022-10-22 15:00:00 +0000
 layout: post
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 
