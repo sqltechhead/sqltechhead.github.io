@@ -2,7 +2,7 @@
 title: CosmosDB Consistency Levels
 date: 2022-10-18 13:30:00 +0000
 layout: post
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 

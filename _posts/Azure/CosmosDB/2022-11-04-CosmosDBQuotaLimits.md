@@ -2,7 +2,7 @@
 title: CosmosDB Quota Limits
 date: 2022-11-04 18:00:00 +0000
 layout: post
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 Knowing your quota limits are very important when it comes to capacity planning, this page will act as a list of all those limits for database operations for easy reference. These tables come from the MSDN article which will be linked at the bottom of the page for a full list of quotas.

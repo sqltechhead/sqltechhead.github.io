@@ -2,7 +2,7 @@
 title: Introduction To CosmosDB
 date: 2022-10-06 15:30:00 +0000
 layout: post
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 

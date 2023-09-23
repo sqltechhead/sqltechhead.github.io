@@ -2,7 +2,7 @@
 title: CosmosDB Schema Design
 date: 2022-10-21 18:00:00 +0000
 layout: post
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 As a first point, noSQL is known as a Schema Free database technology. It allows for totally free unstructured data to be stored. CosmosDB is exactly the same, however the concept of Schema Design still resides and is useful to think of if you want to get the most out of the performance of CosmosDB

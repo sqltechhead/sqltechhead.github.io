@@ -3,7 +3,7 @@ title: CosmosDB Hierarchy
 date: 2022-10-22 19:00:00 +0000
 layout: post
 math: true
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 

@@ -1,7 +1,7 @@
 ---
 title: Big Query Partitioned Tables
 date: 2022-07-28 19:00:00 +0000
-categories: [Google Cloud, BigQuery]
+categories: [Google Cloud,BigQuery]
 ---
 ## Introduction
 In BigQuery you can partition 3 ways:

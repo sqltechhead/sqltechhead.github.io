@@ -3,7 +3,7 @@ title: CosmosDB Request Units
 date: 2022-11-02 18:00:00 +0000
 layout: post
 math: true
-categories: [NoSQL, CosmosDB]
+categories: [Microsoft Azure, CosmosDB]
 ---
 ## Introduction
 
