@@ -90,7 +90,7 @@ CREATE VIEW Test.TestView as (
 ```
 
 #### Materialized Views
-Materialized views in contrast to logical views are computed in the background. This happenes everytime the data changes in the backgroun. Meaning that the data is always available. BigQuery also aims to improve performance further, any query that is run against the main table, BigQuery will check whether the materilized view can be used to bring data back faster and use that instead. There are limitations with these types of views however which can be found [here](https://cloud.google.com/bigquery/docs/materialized-views-intro#limitations)
+Materilized views in contrast to logical views are computed in the background. This happenes everytime the data changes in the backgroun. Meaning that the data is always available. BigQuery also aims to improve performance further, any query that is run against the main table, BigQuery will check whether the materilized view can be used to bring data back faster and use that instead. There are limitations with these types of views however which can be found [here](https://cloud.google.com/bigquery/docs/materialized-views-intro#limitations)
 ```sql
 CREATE MATERIALIZED VIEW project-id.my_dataset.my_mv_table AS
 SELECT date, AVG(net_paid) AS avg_paid
