@@ -57,3 +57,5 @@ Simply it takes the plan and executes it, it is represented as the execution gra
 ![BigQueryExecutionGraph](/assets/images/BigQueryExecutionGraph.png{: .dark .w-75 .normal }
 
 ### Query Management
+The Workers do more than just execute the query. Workers are on standby to monitor as well as carry out adjustments during the process. Some workers will just be monitoring performance, and others will actually adjust the plan things like re-partitioning. This stage is important as it continually validates that the plan is correct, performance and going to get you the data in the quickest way. 
+
