@@ -15,8 +15,11 @@ In most production instances it is crucial that we have all these to ensure as m
 * How to install and setup MongoDB
 * How to configure a 3 node replica set
 * How to query a replica set to get key information and perform administration tasks
+
 ## Setup replica set
+
 ### Setup Servers in azure
+
 * In Azure navigate to Virtual Machines and select Create
 * Create any SKU size you want using a ubuntu image and use ssh for auth
 * On the networking tab we need to create a new Virtual Network. This Virtual Network we will use for all our nodes so that they can communicate with each other
@@ -31,6 +34,7 @@ In most production instances it is crucial that we have all these to ensure as m
 {: .prompt-tip }
 
 ### Setup inbound network rules
+
 Were in a test environment here, so to save time we are going to setup an any any rule on the network for ease
 * Navigate to your server and select the Networking Settings tab
 * Select Create Port Rule
@@ -44,6 +48,7 @@ Were in a test environment here, so to save time we are going to setup an any an
 * Repeat this for every one of our nodes
 
 ### Setup DNS names
+
 We should have dns names for ease and to better describe the servers. 
 
 * Navigate to your server
@@ -79,6 +84,7 @@ sudo systemctl status mongod
 ```
 
 ### Configure Security
+
 Using keyfile as an authentication adds an extra layer of security. It must be specified on each replica set member. If it is then the node can join the replica set, if it is not using the same keyfile then it will be blocked from joining
 
 * Create keyfile for use with the nodes
@@ -225,8 +231,11 @@ mongosh --host <fully qualified node 1>:27017,<fully qualified node 2>:27017,<fu
 ```
 
 ## Querying Replica Sets
+
 ### Get replica set information
+
 #### db.hello()
+
 Returns a document that describes the role of the mongod instance.
 <https://www.mongodb.com/docs/manual/reference/method/db.hello/>
 ```bash
@@ -234,6 +243,7 @@ db.hello()
 ```
 
 #### rs.conf()
+
 Returns a document that contains the current replica set configuration.
 <https://www.mongodb.com/docs/manual/reference/method/rs.conf/>
 ```bash
@@ -241,6 +251,7 @@ rs.conf()
 ```
 
 ### Change priority on a replica set
+
 The below shows you how to change priority on a replica set so that node 0 has the highest priority and therefore should always be chosen if accessible during an election.
 
 ```bash
