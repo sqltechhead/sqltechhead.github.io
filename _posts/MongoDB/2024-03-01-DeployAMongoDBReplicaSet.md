@@ -135,31 +135,20 @@ security:
 ```
 * Your final configuration file should look something like the below
 * Copy and paste this to every conf file on the 3 nodes. 
+
 ```yaml
-# mongod.conf
-
-# for documentation of all options, see:
-#   http://docs.mongodb.org/manual/reference/configuration-options/
-
-# Where and how to store data.
 storage:
   dbPath: /var/lib/mongodb
-#  engine:
-#  wiredTiger:
 
-# where to write logging data.
 systemLog:
   destination: file
   logAppend: true
   path: /var/log/mongodb/mongod.log
 
-# network interfaces
 net:
   port: 27017
   bindIp: 0.0.0.0
 
-
-# how the process runs
 processManagement:
   timeZoneInfo: /usr/share/zoneinfo
 
@@ -167,18 +156,11 @@ security:
   keyFile: /etc/mongodb/pki/keyfile
   authorization: enabled
 
-#operationProfiling:
-
 replication:
   replSetName:
-    mongodb-replica-set
-
-#sharding:
-
-## Enterprise-Only Options:
-
-#auditLog:    
+    mongodb-replica-set 
 ```
+
 * After you have set all your configurations run the below to restart the service and then check the status of it
 ```bash
 sudo systemctl restart mongod
