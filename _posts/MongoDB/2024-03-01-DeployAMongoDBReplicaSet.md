@@ -26,6 +26,7 @@ In most production instances it is crucial that we have all these to ensure as m
 
 * Select Review + create and create your server
 * Repeat this process for the other 2 nodes
+
 > Make sure you remember to select the same virtual network for all.
 {: .prompt-tip }
 
