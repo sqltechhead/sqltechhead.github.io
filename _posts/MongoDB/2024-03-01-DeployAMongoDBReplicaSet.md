@@ -4,7 +4,7 @@ date: 2024-03-01 00:00:00 +0000
 categories: [MongoDB, Replication]
 ---
 ## Introduction
-Replica in MongoDB provides its appluication with:
+Replication in MongoDB provides its application with:
 * High Availability
 * Disaster Recovery
 * Data Durability
