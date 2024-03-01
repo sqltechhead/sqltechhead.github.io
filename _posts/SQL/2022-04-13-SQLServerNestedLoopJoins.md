@@ -33,7 +33,7 @@ ON				a.addresstypeid = b.addresstypeid
 ```
 ![IndexedNestedLoopPlan](/assets/images/IndexedNestedLoopPlan.png){: .dark .w-75 .normal }
 
-A nested loop consists of 2 tables and outer table and an inner table. 
+A nested loop consists of 2 tables an outer table and an inner table. 
 - Outer Table = Top table in the plan
 - Inner Table = Bottom table in the plan
 
@@ -41,7 +41,7 @@ Usually (not always) the outer table will be the smaller table. Then for each ro
 
 In our example it picks up 3 rows from the outer table, and then for each one of those rows it searches for its matches, so in total it executes 3 loops. Nice and efficient, what makes it even more efficient is that SQL is doing an Index Seek on the inner table, this means for each row in the outer table it can seek straight to the row it needs and read no un-necessary rows. 
 
-If we look at the inner table then it has read and brought back exactly 1000 rows. This is exactly what we want, no excess reads so really good
+If we look at the inner table below it has read and brought back exactly 1000 rows. This is exactly what we want, no excess reads so really good
 
 ![IndexedLoopJoinInner](/assets/images/IndexedLoopJoinInner.png){: .dark .w-75 .normal }
 
