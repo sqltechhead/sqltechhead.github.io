@@ -194,6 +194,7 @@ rs.initiate(
 * Create yourself as a user on the replica set
 
 ```bash
+use admin
 db.createUser({
    user: "username",
    pwd: "password",
